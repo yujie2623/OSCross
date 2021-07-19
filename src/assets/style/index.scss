@@ -1,0 +1,123 @@
+
+* {
+	margin:0;
+	border:0;
+	padding:0;
+	vertical-align:baseline;
+	outline:none;
+	list-style:none;
+	font-style:normal;
+  box-sizing: border-box;
+}
+body {
+	line-height: 24px;
+  font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+  color: $color333;
+}
+
+body ::selection {color:#fff;background:$mainColor;}
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:400
+}
+a {
+	text-decoration:none
+}
+a:focus {
+	outline:none
+}
+a:hover,a:active {
+	outline:0;
+}
+img {
+	vertical-align:middle
+}
+textarea,input,button {
+	-webkit-appearance:none;
+	appearance:none;
+	border-radius:0
+}
+
+#app {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+.elDivider {
+  width: 300px;
+  margin: 22px auto 60px;
+  svg {
+    font-size: 18px;
+    color: $mainColor;
+  }
+}
+.bgcolor {
+  .el-divider__text {
+    background-color: $mainBlockBg;
+  }
+}
+.hborder{
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+
+// banner
+.productPage_banner {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: $colorfff;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(36,43,54, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+  .productBannerTit {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 35px;
+    color: $colorfff;
+    z-index: 2;
+    font-weight: 300;
+  }
+  .downloadIso {
+    z-index: 2;
+    a {
+      color: $colorfff;
+    }
+  }
+}
+
+
+.homeIntrodution {
+  padding: 50px 0;
+}
+
+.more {
+  text-align: center;
+  margin: 30px 0;
+  a {
+    color: $colorfff;
+    display: inline-block;
+  }
+}
+
+#nprogress .bar {
+  height: 4px;
+  background: $mainColor !important;
+}
+

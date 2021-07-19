@@ -1,0 +1,26 @@
+$color333: #333333; // 页面字体颜色
+$colorccc: #ccc;
+$colorfff: #ffffff;
+$mainColor: #FF6D34; // 按钮等颜色
+$bg: #F6F9FC;// 产品特征背景色
+$colorfont: #6f7680;// 字体色
+$bgblock: #0b2f3d; // 头尾颜色
+$hoverBg: #336699; // 鼠标移入列表颜色
+$maxwidth: 1200px;
+$mainBlockBg: #f9f9f9; // 部分块背景色
+
+
+
+@mixin flex($type) {
+  display: flex;
+  justify-content: $type;
+}
+
+
+@mixin font_hideen($num) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+}

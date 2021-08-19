@@ -29,10 +29,6 @@ app.use(i18n)
 app.use(ElementPlus, {
   i18n: i18n.global.t,
 })
-console.log(
-  `\n%cOSCross%c ${time} \n`,
-  'color:#fadfa3;background:#030307;padding:6px;',
-  'background:#fadfa3;color:#030307;padding:5px 0;',
-)
+
 app.use(store)
 app.mount('#app')

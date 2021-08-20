@@ -31,4 +31,5 @@ app.use(ElementPlus, {
 })
 
 app.use(store)
+// 挂载
 app.mount('#app')

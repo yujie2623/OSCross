@@ -7,7 +7,7 @@ import NProgress from 'nprogress' // 引入nprogress插件
 import 'nprogress/nprogress.css'  // 这个nprogress样式必须引入
 NProgress.configure({showSpinner: false}) // 圈圈隐藏
 
-
+// 路由拦截
 router.beforeEach(async(to, from, next) => {
   const tokenName = Cookie.get('username')
   if (tokenName) {
